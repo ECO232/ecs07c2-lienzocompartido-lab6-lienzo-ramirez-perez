@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js socket example</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+</head>
+<body>
+    <h1>Cliente</h1>
+
+    <label>Color:</label>
+    <input type="color" onchange="changeColor(this.value)">
+
+    <label>Tamaño:</label>
+    <input type="range" min="1" max="100" onchange="changeSize(this.value)">
+
+    <script src="cliente.js"></script>
+</body>
+</html>
