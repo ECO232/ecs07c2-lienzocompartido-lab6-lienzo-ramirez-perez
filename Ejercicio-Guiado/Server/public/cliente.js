@@ -97,3 +97,13 @@ function hexToRgb(hex) {
 function changeSize(newSize) {
     size = parseInt(newSize);
 }
+
+function keyPressed() {
+    if (keyCode === ENTER) {
+      createCanvas(1000,1000);
+      console.log('Canva agrandado')
+    } else if (keyCode === ESCAPE) {
+      createCanvas(400,400);
+      console.log('Canva encogido')
+    }
+  }
